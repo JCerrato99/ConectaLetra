@@ -1,40 +1,21 @@
 package conectaLetra;
 
+import java.awt.BorderLayout;
 import java.awt.EventQueue;
+import javax.swing.JPanel;
 import javax.swing.JFrame;
+import javax.swing.border.EmptyBorder;
 
-public class Vista {
+public class Vista extends JFrame{
+	
+	private JPanel contentPane;
 
-	private JFrame frame;
-
-	/**
-	 * Launch the application.
-	 */
-	public static void main(String[] args) {
-		EventQueue.invokeLater(new Runnable() {
-			public void run() {
-				try {
-					Vista window = new Vista();
-					window.frame.setVisible(true);
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
-			}
-		});
-	}
-
-	/**
-	 * Create the application.
-	 */
 	public Vista() {
-		initialize();
-	}
-
-	/**
-	 * Initialize the contents of the frame.
-	 */
-	private void initialize() {
-		frame = new JFrame();
-		frame.setBounds(0, 0, 380, 620);
+		setTitle("Conversor Euro - Dolar 33");
+		setBounds(0, 0, 450, 300);
+		contentPane = new JPanel();
+		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+		contentPane.setLayout(new BorderLayout(0, 0));
+		setContentPane(contentPane);
 	}
 }
