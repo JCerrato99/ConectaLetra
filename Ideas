@@ -1,0 +1,14 @@
+Primero se selecciona la ficha que se desea conseguir
+en funcion de la ficha que se elija se crea un array de ceros y unos, 
+los ceros no hacen nada y los unos representan la posicion de la ficha
+
+crear un array vacio de tamaño x para guaradar las fichas.
+" " para donde no haya fichas, "0" para amarillas y  "1" para rojas
+arriba poner un boton para cada columna,
+cuando se clickee el boton se comprueba el array en la posicion del boton y se coloca una ficha en la posicion mas baja de esa columna
+cuando se coloque una ficha se comprueba todo el array buscando una combinacion concreta(la ficha de tetris) 
+y en caso de que no coincida se pasa al siguiente jugador
+si todo el array esta completo se dará como empate
+
+Opcion de volver a jugar
+
