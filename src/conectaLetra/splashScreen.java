@@ -11,11 +11,11 @@ import javax.swing.JProgressBar;
 import javax.swing.SwingConstants;
 import javax.swing.SwingUtilities;
  
-public class SplashScreen extends JDialog{
+public class splashScreen extends JDialog{
  
    private JProgressBar barraProgreso;
  
-   public SplashScreen() {
+   public splashScreen() {
       setBounds(0, 0, 637, 566);
       JPanel contentPane = new JPanel();
       contentPane.setLayout(new BorderLayout());
@@ -24,7 +24,9 @@ public class SplashScreen extends JDialog{
       //Creo una etiqueta con la imagen en el centro
       JLabel lblImagen = new JLabel();
       //Indico la imagen que quiero mostrar en la label
-      lblImagen.setIcon(new ImageIcon(SplashScreen.class.getResource("/imagenes/moe.jpeg")));
+      lblImagen.setIcon(new ImageIcon(splashScreen.class.getResource("/imagenes/moe.jpeg")));
+      lblImagen.setHorizontalAlignment(SwingConstants.CENTER);
+      lblImagen.setVerticalAlignment(SwingConstants.CENTER);
       contentPane.add(lblImagen, BorderLayout.CENTER);
  
       //Creo un panel al sur con una barra de carga y una label para el autor

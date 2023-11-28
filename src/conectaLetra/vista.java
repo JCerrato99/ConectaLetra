@@ -6,11 +6,11 @@ import javax.swing.JPanel;
 import javax.swing.JFrame;
 import javax.swing.border.EmptyBorder;
 
-public class Vista extends JFrame{
+public class vista extends JFrame{
 	
 	private JPanel contentPane;
 
-	public Vista() {
+	public vista() {
 		setTitle("Conversor Euro - Dolar 33");
 		setBounds(0, 0, 450, 300);
 		contentPane = new JPanel();
