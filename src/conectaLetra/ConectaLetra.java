@@ -1,7 +1,7 @@
 package conectaLetra;
 
 
-public class conectaLetra {
+public class ConectaLetra {
 
 	public static void main(String[] args) {
 		modelo mdl = new modelo();
