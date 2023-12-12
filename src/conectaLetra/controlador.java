@@ -5,6 +5,7 @@ import java.awt.event.ActionListener;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
+import javax.swing.JPanel;
 
 public class controlador  {
 
@@ -15,12 +16,16 @@ public class controlador  {
 	  this.miModelo = miModelo;
 	  this.miVista = miVista;
 	  JButton botonJugar = miVista.obtenerBotonJugar();
+	  JPanel panelJuego= miVista.panelElegirPiezas;
+	  JPanel panelPrincipal= miVista.panelPrincipal;
 	  
 	  miVista.obtenerBotonJugar().addActionListener(new ActionListener() {
 	         @Override
 	         public void actionPerformed(ActionEvent e) {
 	             // Lógica para manejar el evento de clic en el botón Jugar
-	        	 JOptionPane.showMessageDialog(null,"¡Has presionado el botón Jugar!");	         }
+	        	 miVista.add(panelJuego);
+	        	 miVista.panelPrincipal.setVisible(false);
+	         }
 	     });
 	  
 	 }
