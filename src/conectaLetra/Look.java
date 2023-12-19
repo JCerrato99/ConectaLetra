@@ -9,9 +9,9 @@ import java.awt.Color;
 public class Look {
 	
 	
-	 private vista miVista;
+	 private Vista miVista;
 
-	public Look(vista miVista) {
+	public Look(Vista miVista) {
 		this.miVista = miVista;
 
 /////////////////////////////////////////////PANEL PRINCIPAL//////////////////////////////////////////

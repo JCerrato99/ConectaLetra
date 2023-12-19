@@ -9,12 +9,12 @@ import javax.swing.JPanel;
 /**
  * Fichero encargado de conectar todas los .java entre si
  */
-public class controlador  {
+public class Controlador  {
 
-	 private modelo miModelo;
-	 private vista miVista;
+	 private Modelo miModelo;
+	 private Vista miVista;
 	 
-	 public controlador(modelo miModelo, vista miVista) {
+	 public Controlador(Modelo miModelo, Vista miVista) {
 	  this.miModelo = miModelo;
 	  this.miVista = miVista;
 	  JButton botonJugar = miVista.obtenerBotonJugar();
