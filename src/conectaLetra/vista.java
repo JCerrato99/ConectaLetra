@@ -4,7 +4,9 @@ import java.awt.*;
 import javax.swing.*;
 import javax.swing.border.LineBorder;
 import javax.swing.plaf.basic.BasicButtonUI;
-
+/**
+ * Fichero con la vista del programa
+ */
 public class vista extends JFrame {
 
 	private JButton botonJugar=new JButton();
@@ -13,7 +15,6 @@ public class vista extends JFrame {
 
 	public vista() {
         ///////////////////////////////////////////////// VENTANA PRINCIPAL ///////////////////////////////////////////////////////////////////////////////////////
-        panelPrincipal.setBackground(Color.WHITE);
         
         setTitle("Conecta Pieza");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -25,7 +26,7 @@ public class vista extends JFrame {
         JLabel lblNewLabel1 = new JLabel("Conecta Pieza");
         lblNewLabel1.setFont(new Font("Bookman Old Style", Font.BOLD | Font.ITALIC, 44));
         GridBagConstraints gbc_lblNewLabel1 = new GridBagConstraints();
-        gbc_lblNewLabel1.insets = new Insets(0, 0, 125, 0); // Aumenta el espacio en la parte inferior
+        gbc_lblNewLabel1.insets = new Insets(0, 0, 75, 0); // Aumenta el espacio en la parte inferior
         gbc_lblNewLabel1.gridx = 0;
         gbc_lblNewLabel1.gridy = 0;
         panelPrincipal.add(lblNewLabel1, gbc_lblNewLabel1);
@@ -60,7 +61,7 @@ public class vista extends JFrame {
         JLabel lblNewLabel2 = new JLabel("Seleccione una pieza");
         lblNewLabel2.setFont(new Font("Bookman Old Style", Font.BOLD | Font.ITALIC, 34));
         GridBagConstraints gbc_lblNewLabel2 = new GridBagConstraints();
-        gbc_lblNewLabel2.insets = new Insets(0, 0, 125, 0); // Aumenta el espacio en la parte inferior
+        gbc_lblNewLabel2.insets = new Insets(0, 0, 75, 0); // Aumenta el espacio en la parte inferior
         gbc_lblNewLabel2.gridx = 0;
         gbc_lblNewLabel2.gridy = 0;
         panelElegirPiezas.add(lblNewLabel2, gbc_lblNewLabel2);
@@ -78,7 +79,7 @@ public class vista extends JFrame {
         //Creo una etiqueta con la imagen en el centro
         JButton foto1 = new JButton();
         //Indico la imagen que quiero mostrar en la label
-        foto1.setIcon(new ImageIcon(splashScreen.class.getResource("/imagenes/cubo.png")));
+        foto1.setIcon(new ImageIcon(splashScreen.class.getResource("../imagenes/cubo.png")));
         foto1.setHorizontalAlignment(SwingConstants.CENTER);
         GridBagConstraints gbcfoto1 = new GridBagConstraints();
         gbcfoto1.insets = new Insets(0, 20, 20, 0); 
@@ -94,7 +95,7 @@ public class vista extends JFrame {
         //Creo una etiqueta con la imagen en el centro
         JButton foto2 = new JButton();
         //Indico la imagen que quiero mostrar en la label
-        foto2.setIcon(new ImageIcon(splashScreen.class.getResource("/imagenes/l.png")));
+        foto2.setIcon(new ImageIcon(splashScreen.class.getResource("../imagenes/l.png")));
         foto2.setHorizontalAlignment(SwingConstants.CENTER);
         GridBagConstraints gbcfoto2 = new GridBagConstraints();
         gbcfoto2.insets = new Insets(0, 20, 20, 0); // Aumenta el espacio en la parte inferior
@@ -110,7 +111,7 @@ public class vista extends JFrame {
         //Creo una etiqueta con la imagen en el centro
         JButton foto3 = new JButton();
         //Indico la imagen que quiero mostrar en la label
-        foto3.setIcon(new ImageIcon(splashScreen.class.getResource("/imagenes/t.png")));
+        foto3.setIcon(new ImageIcon(splashScreen.class.getResource("../imagenes/t.png")));
         foto3.setHorizontalAlignment(SwingConstants.CENTER);
         foto3.setVerticalAlignment(SwingConstants.CENTER);
         GridBagConstraints gbcfoto3 = new GridBagConstraints();
@@ -127,7 +128,7 @@ public class vista extends JFrame {
         //Creo una etiqueta con la imagen en el centro
         JButton foto4 = new JButton();
         //Indico la imagen que quiero mostrar en la label
-        foto4.setIcon(new ImageIcon(splashScreen.class.getResource("/imagenes/linea.png")));
+        foto4.setIcon(new ImageIcon(splashScreen.class.getResource("../imagenes/linea.png")));
         foto4.setHorizontalAlignment(SwingConstants.CENTER);
         foto4.setVerticalAlignment(SwingConstants.CENTER);
         GridBagConstraints gbcfoto4 = new GridBagConstraints();

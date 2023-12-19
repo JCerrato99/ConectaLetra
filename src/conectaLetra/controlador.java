@@ -6,7 +6,9 @@ import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
-
+/**
+ * Fichero encargado de conectar todas los .java entre si
+ */
 public class controlador  {
 
 	 private modelo miModelo;
@@ -19,7 +21,7 @@ public class controlador  {
 	  JPanel panelJuego= miVista.panelElegirPiezas;
 	  JPanel panelPrincipal= miVista.panelPrincipal;
 	  
-	  miVista.obtenerBotonJugar().addActionListener(new ActionListener() {
+	  botonJugar.addActionListener(new ActionListener() {
 	         @Override
 	         public void actionPerformed(ActionEvent e) {
 	             // Lógica para manejar el evento de clic en el botón Jugar
