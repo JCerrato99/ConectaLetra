@@ -19,14 +19,14 @@ public class Controlador  {
 	  this.miVista = miVista;
 	  JButton botonJugar = miVista.obtenerBotonJugar();
 	  JPanel panelJuego= miVista.panelElegirPiezas;
-	  JPanel panelPrincipal= miVista.panelPrincipal;
 	  
 	  botonJugar.addActionListener(new ActionListener() {
 	         @Override
 	         public void actionPerformed(ActionEvent e) {
 	             // Lógica para manejar el evento de clic en el botón Jugar
-	        	 miVista.add(panelJuego);
 	        	 miVista.panelPrincipal.setVisible(false);
+	        	 miVista.add(panelJuego);
+	        	 
 	         }
 	     });
 	  
